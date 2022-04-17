@@ -5,14 +5,18 @@ class vista:
 
     def obtenerInput(self):
         print("Introduzca la primera frase:")
-        self.frase_1 = str(input())
+        self.setFrase1(str(input()))
         print("Introduzca la segunda frase:")
-        self.frase_2 = str(input())
+        self.setFrase2(str(input()))
     
     def getFrase1(self):
         return self.frase1
     def getFrase2(self):
         return self.frase2
+    def setFrase1(self, frase1):
+        self.frase1 = frase1
+    def setFrase2(self, frase2):
+        self.frase2 = frase2
         
 
 
