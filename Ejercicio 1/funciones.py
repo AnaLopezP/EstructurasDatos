@@ -15,3 +15,7 @@ class MientrasQue:
     def __init__(self, condicion, bloque):
         self.condicion = condicion
         self.bloque = bloque
+
+class Mostrar:
+    def __init__(self, mensaje):
+        self.mensaje = mensaje
