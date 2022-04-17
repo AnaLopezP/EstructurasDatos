@@ -11,6 +11,7 @@ class Si:
         self.entonces = entonces
         self.si_no = si_no
 
+
 class MientrasQue:
     def __init__(self, condicion, bloque):
         self.condicion = condicion
@@ -19,3 +20,6 @@ class MientrasQue:
 class Mostrar:
     def __init__(self, mensaje):
         self.mensaje = mensaje
+
+    def mnsj(self):
+        print(self.mensaje)
