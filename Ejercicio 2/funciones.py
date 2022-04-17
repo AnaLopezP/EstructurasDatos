@@ -1,3 +1,23 @@
+class vista:
+    def __init__(self,frase1, frase2):
+        self.frase1 = frase1
+        self.frase2 = frase2
+
+    def obtenerInput(self):
+        print("Introduzca la primera frase:")
+        self.frase_1 = str(input())
+        print("Introduzca la segunda frase:")
+        self.frase_2 = str(input())
+    
+    def getFrase1(self):
+        return self.frase1
+    def getFrase2(self):
+        return self.frase2
+        
+
+
+
+
 def pasar_mayus(frase1):
     frase_mayus = frase1.upper()
     print(frase_mayus)
