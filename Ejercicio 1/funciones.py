@@ -44,4 +44,8 @@ def visitante():
     op2 = Si(opcion2, ok.mensaje, ko.mensaje)
     op2.verificacion()
 
-    
+    bloque_opcion = Bloque()
+    bloque_opcion.agregarInstruccion(op1)
+    bloque_opcion.agregarInstruccion(op2)
+    mientras = MientrasQue(True, bloque_opcion)
+    print(bloque_opcion.instrucciones)
