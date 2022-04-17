@@ -3,10 +3,10 @@ import funciones
 if __name__ == "__main__":
     vista = funciones.vista("", "")
     vista.obtenerInput()
-    print(vista.getFrase1())
 
     controlador = funciones.controlador()
-    frase_1_mayus = controlador.pasar_mayus(vista.getFrase1())
+    cadena = vista.getFrase1()
+    frase_1_mayus = controlador.pasar_mayus(cadena)
     frase_2_mayus = controlador.pasar_mayus(vista.getFrase2())
 
     dao = funciones.DAO()

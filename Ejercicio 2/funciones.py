@@ -21,18 +21,21 @@ class vista:
 
 
 class controlador:
-    def pasar_mayus(frase):
+    def __init__(self):
+        pass
+    def pasar_mayus(self, frase):
         frase_mayus = frase.upper()
-        print(frase_mayus)
         return frase_mayus
 
 class DAO:
-    def escribir(archivo, frase, modo):
+    def __init__(self):
+        pass
+    def escribir(self, archivo, frase, modo):
         archivo = open(archivo, modo)
         archivo.write(frase + "\n")
         archivo.close()
 
-    def leer(archivo):
+    def leer(self, archivo):
         archivo = open(archivo, "r")
         cadena = archivo.read()
         archivo.close()
