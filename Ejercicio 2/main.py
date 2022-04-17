@@ -7,3 +7,4 @@ if __name__ == "__main__":
     frase_2 = str(input())
 
     funciones.pasar_mayus(frase_1, frase_2)
+    funciones.escribir(frase_1, frase_2)
