@@ -27,7 +27,13 @@ class controlador:
         return frase_mayus
 
 class DAO:
-    def escribir(archivo, frase):
-        archivo = open(archivo, "w")
+    def escribir(archivo, frase, modo):
+        archivo = open(archivo, modo)
         archivo.write(frase + "\n")
         archivo.close()
+
+    def leer(archivo):
+        archivo = open(archivo, "r")
+        cadena = archivo.read()
+        archivo.close()
+        return cadena

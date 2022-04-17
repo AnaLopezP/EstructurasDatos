@@ -5,7 +5,12 @@ if __name__ == "__main__":
     vista.obtenerInput()
     print(vista.getFrase1())
 
+    controlador = funciones.controlador()
+    frase_1_mayus = controlador.pasar_mayus(vista.getFrase1())
+    frase_2_mayus = controlador.pasar_mayus(vista.getFrase2())
 
-    '''frase_1_mayus = funciones.pasar_mayus(funciones.vista.getFrase1())
-    frase_2_mayus = funciones.pasar_mayus(funciones.vista.getFrase2())
-    funciones.escribir(frase_1_mayus, frase_2_mayus)'''
+    dao = funciones.DAO()
+    dao.escribir("archivo.txt", frase_1_mayus, "w")
+    dao.escribir("archivo.txt", frase_2_mayus, "a")
+    print(dao.leer("archivo.txt"))
+    
