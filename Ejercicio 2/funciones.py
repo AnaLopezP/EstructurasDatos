@@ -26,10 +26,8 @@ class controlador:
         print(frase_mayus)
         return frase_mayus
 
-
-def escribir(frase1, frase2):
-    archivo = open("archivo.txt", "w")
-    archivo.write(frase1 + "\n")
-    archivo.write(frase2)
-    archivo.close()
-    return archivo
+class DAO:
+    def escribir(archivo, frase):
+        archivo = open(archivo, "w")
+        archivo.write(frase + "\n")
+        archivo.close()
