@@ -22,7 +22,7 @@ class MientrasQue:
         self.condicion = condicion
         self.bloque = bloque
         while self.condicion:
-            Mostrar(self.bloque).mnsj()
+            Mostrar(self.bloque).mnsj
 
 class Mostrar:
     def __init__(self, mensaje):
@@ -49,4 +49,3 @@ def visitante():
     bloque_opcion.agregarInstruccion(op2)
     mientras = MientrasQue(True, bloque_opcion)
     print(bloque_opcion.instrucciones)
-visitante()
