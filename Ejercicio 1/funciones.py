@@ -49,3 +49,4 @@ def visitante():
     bloque_opcion.agregarInstruccion(op2)
     mientras = MientrasQue(True, bloque_opcion)
     print(bloque_opcion.instrucciones)
+visitante()
