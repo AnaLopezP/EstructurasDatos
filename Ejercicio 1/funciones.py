@@ -30,3 +30,18 @@ class Mostrar:
 
     def mnsj(self):
         print(self.mensaje)
+
+
+def visitante():
+    ok = Mostrar("OK")
+    ko = Mostrar("KO")
+    opcion1 = 2 + 2 == 4
+    opcion2 = 2 + 2 == 22
+
+    op1 = Si(opcion1, ok.mensaje, ko.mensaje)
+    op1.verificacion()
+
+    op2 = Si(opcion2, ok.mensaje, ko.mensaje)
+    op2.verificacion()
+
+    
