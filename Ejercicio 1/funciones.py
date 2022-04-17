@@ -11,3 +11,7 @@ class Si:
         self.entonces = entonces
         self.si_no = si_no
 
+class MientrasQue:
+    def __init__(self, condicion, bloque):
+        self.condicion = condicion
+        self.bloque = bloque
