@@ -20,12 +20,12 @@ class vista:
         
 
 
+class controlador:
+    def pasar_mayus(frase):
+        frase_mayus = frase.upper()
+        print(frase_mayus)
+        return frase_mayus
 
-
-def pasar_mayus(frase1):
-    frase_mayus = frase1.upper()
-    print(frase_mayus)
-    return frase_mayus
 
 def escribir(frase1, frase2):
     archivo = open("archivo.txt", "w")
