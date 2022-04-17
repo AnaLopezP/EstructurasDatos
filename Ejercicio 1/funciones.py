@@ -11,6 +11,11 @@ class Si:
         self.entonces = entonces
         self.si_no = si_no
 
+    def verificacion(self):
+        if self.condicion:
+            Mostrar(self.entonces).mnsj()
+        else:
+            Mostrar(self.si_no).mnsj()
 
 class MientrasQue:
     def __init__(self, condicion, bloque):
