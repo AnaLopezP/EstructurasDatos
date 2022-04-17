@@ -1,9 +1,7 @@
-def pasar_mayus(frase1, frase2):
-    frase1mayus = frase1.upper()
-    print(frase1mayus)
-    frase2mayus = frase2.upper()
-    print(frase2mayus)
-    return frase1mayus and frase2mayus
+def pasar_mayus(frase1):
+    frase_mayus = frase1.upper()
+    print(frase_mayus)
+    return frase_mayus
 
 def escribir(frase1, frase2):
     archivo = open("archivo.txt", "w")
