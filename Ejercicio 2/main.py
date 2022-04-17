@@ -5,8 +5,7 @@ if __name__ == "__main__":
     vista.obtenerInput()
 
     controlador = funciones.controlador()
-    cadena = vista.getFrase1()
-    frase_1_mayus = controlador.pasar_mayus(cadena)
+    frase_1_mayus = controlador.pasar_mayus(vista.getFrase1())
     frase_2_mayus = controlador.pasar_mayus(vista.getFrase2())
 
     dao = funciones.DAO()
